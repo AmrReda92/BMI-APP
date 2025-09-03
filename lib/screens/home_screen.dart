@@ -189,7 +189,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 icon: const Icon(Icons.add, color: Colors.white),
                                 onPressed: () {
                                   setState(() {
-                                    weight--;
+                                    weight++;
                                   });
                                 },
                               ),
