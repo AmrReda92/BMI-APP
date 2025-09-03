@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 class ResultScreen extends StatefulWidget {
   final height ;
   final weight;
-   ResultScreen({super.key,required this.weight,required this.height});
+  const ResultScreen({super.key,required this.weight,required this.height});
 
   ResultInfo bmiText (double value){
     if(value<=18.4) {

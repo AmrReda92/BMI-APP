@@ -169,29 +169,32 @@ class _HomeScreenState extends State<HomeScreen> {
                           children: [
 
                             CircleAvatar(
-                              backgroundColor: Color(0xff8B8C9E),
+                              backgroundColor: const Color(0xff8B8C9E),
                               radius: 24,
-                              child: InkWell(
-                                onTap: (){
+                              child: IconButton(
+                                icon: const Icon(Icons.remove, color: Colors.white),
+                                onPressed: () {
                                   setState(() {
                                     weight--;
                                   });
                                 },
-                                  child: Icon(Icons.remove,color: Colors.white,)
                               ),
                             ),
+
                             SizedBox(width: 42,),
                             CircleAvatar(
-                              backgroundColor: Color(0xff8B8C9E),
+                              backgroundColor: const Color(0xff8B8C9E),
                               radius: 24,
-                              child: InkWell(
-                                onTap: (){
+                              child: IconButton(
+                                icon: const Icon(Icons.add, color: Colors.white),
+                                onPressed: () {
                                   setState(() {
-                                    weight++;
+                                    weight--;
                                   });
                                 },
-                                  child: Icon(Icons.add,color: Colors.white,)),
+                              ),
                             ),
+
                           ],
                         ),
                       ],
@@ -221,28 +224,31 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             CircleAvatar(
-                              backgroundColor: Color(0xff8B8C9E),
+                              backgroundColor: const Color(0xff8B8C9E),
                               radius: 24,
-                              child: InkWell(
-                                onTap: (){
+                              child: IconButton(
+                                icon: const Icon(Icons.remove, color: Colors.white),
+                                onPressed: () {
                                   setState(() {
                                     age--;
                                   });
                                 },
-                                  child: Icon(Icons.remove,color: Colors.white,)),
+                              ),
                             ),
+
                             SizedBox(width: 42,),
                             CircleAvatar(
-                            backgroundColor: Color(0xff8B8C9E),
-                            radius: 24,
-                            child: InkWell(
-                              onTap: (){
-                                setState(() {
-                                  age++;
-                                });
-                              },
-                                child: Icon(Icons.add,color: Colors.white,)),
-    ),
+                              backgroundColor: const Color(0xff8B8C9E),
+                              radius: 24,
+                              child: IconButton(
+                                icon: const Icon(Icons.add, color: Colors.white),
+                                onPressed: () {
+                                  setState(() {
+                                    age++;
+                                  });
+                                },
+                              ),
+                            ),
                           ],
                         ),
 
@@ -270,7 +276,7 @@ class _HomeScreenState extends State<HomeScreen> {
          },
         child:Container(
           alignment: Alignment.center,
-          height: 100,
+          height: 80,
           width: double.infinity,
           decoration:BoxDecoration(
             borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
